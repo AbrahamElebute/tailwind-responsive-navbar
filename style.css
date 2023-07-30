@@ -1,0 +1,12 @@
+/* styles.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Your additional custom styles here */
+.nav {
+  @apply -translate-y-[130%] transition-transform duration-500;
+}
+.nav-toggle {
+  @apply translate-y-0;
+}

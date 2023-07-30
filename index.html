@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-full relative">
+    <header class="bg-white">
+      <nav
+        class="flex w-[92%] mx-auto items-center justify-between bg-white z-30"
+      >
+        <div>
+          <img
+            src="icons8-duolingo-logo-bubbles/icons8-duolingo-logo-100.svg"
+            alt=""
+            class="w-20"
+          />
+        </div>
+        <div
+          class="md:-translate-y-[0] nav absolute md:static md:w-fit w-full md:z-0 -z-10 p-5 top-[98%] md:top-0 left-0 md:h-full min-h-[60vh]md:bg-transparenttre bg-white"
+        >
+          <ul
+            class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-[12vw] md:m-0 mt-7"
+          >
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Explore</a></li>
+            <li><a href="/">Library</a></li>
+            <li><a href="/">Help</a></li>
+            <li><a href="/">Premium</a></li>
+          </ul>
+        </div>
+        <div class="flex gap-4">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+          >
+            Sign in
+          </button>
+          <button class="block md:hidden">
+            <img
+              src="icons8-hamburger-menu-ios-16-filled/icons8-hamburger-menu-50.svg"
+              alt=""
+              class="btn"
+            />
+          </button>
+        </div>
+      </nav>
+    </header>
+    <script>
+      const Btn = document.querySelector(".btn");
+      Btn.addEventListener("click", () => {
+        document.querySelector(".nav").classList.toggle("nav-toggle");
+      });
+    </script>
+  </body>
+</html>
